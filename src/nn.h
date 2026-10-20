@@ -2,7 +2,7 @@
 #define NN
 typedef struct Network{
     double weight_input1_hidden1;
-    double weight_input2_hiddem1;
+    double weight_input2_hidden1;
     double weight_input1_hidden2;
     double weight_input2_hidden2;
 
