@@ -14,6 +14,16 @@ typedef struct Network{
     double biasoutput;
 } Network;
 
+typedef struct ForwardResult{
+    double h1;
+    double h2;
+    double output;
+} ForwardResult;
+
 void init_network(Network *nn);
+ForwardResult forward(Network *n, double input1, double input2);
+void train_network(Network *nn, int epochs, double learning_rate);
+int save_weights(const Network *nn, const char *filename);
+int load_weights(Network *nn, const char *filename);
 
 #endif
