@@ -79,7 +79,7 @@ void train_network(Network *nn, int epochs, double learning_rate){
             nn->biashidden2 -= learning_rate*delh2;
         }
         if ((epoch) % 1000 == 0) {
-            printf("Epoch %d | Average loss: %.6f\n",epoch + 1, totalLoss / 4.0);
+            printf("Epoch %d | Average loss: %.6f\n",epoch, totalLoss / 4.0);
         }
     }
 }
